@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e2e2e;
+    font-family: "Inter", sans-serif;
+    background-color: #9de6f8;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 20px;
+    
+    
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        height: 50rem;
+        width: 25rem;
+        border-radius: 40px;
+        border: 10px solid #2e2e2e;
+        padding: 10px;
+        padding-top: 20px;
+      }
+      .wrapper .header h1{
+            font-size: 2.2rem;
+      }
+      .wrapper .header img{
+            font-size: 2rem;
+            margin-top: 1px;
+      }
+}
+.header{
+      display: flex;
+      /* height: 20%; */
+      width: 100%;
+      justify-content: space-between;
+      
+}
+.header img{
+      height: 3rem;
+      border-radius: 50%;
+      border: 1px solid rgb(102, 101, 101);
+      padding: 8px;
+      margin-top: 8px;
+      
+}
+.header h1{
+      font-size: 2rem;
+}
+.countriesSelector{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 10%;
+      padding-top: 20px;
+}
+.countriesSelector #fselect{
+      height: 2.8rem;
+      width: 7rem;
+      padding: 8px;
+      border-radius: 2rem;
+      border: 1px solid rgb(102, 101, 101);
+}
+.countriesSelector img{
+      height: 3rem;
+      border-radius: 50%;
+      border: 1px solid rgb(102, 101, 101);
+      padding: 8px;
+      background-color: #2e2e2e;
+      
+}
+.countriesSelector #sselect{
+      height: 2.8rem;
+      width: 7rem;
+      padding: 8px;
+      border-radius: 2rem;
+      border: 1px solid rgb(102, 101, 101);
+}
+
+.text{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+      
+}
+.text .text1{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 50%;
+      padding: 10px 10px 0 10px;      
+}
+.text .text2{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 50%;
+      padding: 10px 10px 0 10px;
+      /* background-color: red; */
+}
+.text .text2 textarea{
+      height: 100%;
+      width: 100%;
+      border: 1px solid rgb(102, 101, 101);
+      border-radius: 1rem;
+      padding: 10px;
+      resize: none;
+}
+.text .text1 textarea{
+      height: 100%;
+      width: 100%;
+      border: 1px solid rgb(102, 101, 101);
+      border-radius: 1rem;
+      padding: 10px;
+      resize: none;
+}
+.option{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 10%;
+      width: 100%;
+      margin-top: 10px;
+}
