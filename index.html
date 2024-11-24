@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVO-Translator</title>
-    <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Evo-Translate</title>
+      <link rel="stylesheet" href="style1.css">
 </head>
-
 <body>
-    <div class="container">
+      <div class="wrapper">
 
-        <h1 style="color: white; font-size: 40px;">EVO-Translator</h1>
-        <div class="Text">
-            <textarea name="" id="fromText" placeholder="Enter text to translate"></textarea>
-            <textarea name="" id="toText" placeholder="Translated text"></textarea>
-        </div>
-        <div class="selectArea">
-            <div class="select1">
-                <img src="speaker.svg" alt="speaker" id="speaker">
-                <img src="copy.svg" alt="copy" id="copy">
-                <select name="" id="fselect">
-                  <option value="en-GB">English</option>
-                  <option value="hi-IN">Hindi</option>
-                </select>
+            <div class="header">
+                  <img src="menu.svg" alt="menu">
+                  <h1>Evo-Translate</h1>
+                  <img src="dot.svg" alt="dot">
             </div>
-            <div class="select2">
-                <img src="speaker.svg" alt="speaker" id="speaker">
-                <img src="copy.svg" alt="copy" id="copy">
-                <select name="" id="sselect">
-                  <option value="hi-IN">Hindi</option>
-                    <option value="en-GB">English</option>
-                    
-                </select>
+            <div class="countriesSelector">
+                  <select  id="fselect">
+                        <option value="en-GB">English</option>
+                        <option value="hi-IN">Hindi</option>      
+                  </select>
+                  
+                  <div>
+                        <img src="convert.svg" alt="convert" id="convert">
+                  </div>
+                  <select  id="sselect">
+                        <option value="hi-IN">Hindi</option>
+                        <option value="en-GB">English</option>
+                          
+                  </select>
             </div>
-        </div>
-        <button id="transfer">Translate</button>
-    </div>
-
-
-    <script src="script.js"></script>
+            <div class="text">
+                  <div class="text1">
+                        <textarea name="" id="fromText" placeholder="Enter text to translate"></textarea>
+                        
+                        <div class="option">
+                              <img src="speaker.svg" alt="speaker" id="speaker1">
+                              <img src="mic.svg" alt="mic" id="mic">
+                        </div>
+                  </div>
+                  <div class="text2">
+                        <textarea name="" id="toText" placeholder="Translated text"></textarea>
+                        <div class="option">
+                        <img src="speaker.svg" alt="speaker" id="speaker2">
+                        <img src="copy.svg" alt="copy" id="copy">
+                        </div>
+                  </div>
+            </div>
+            
+      </div>
+      <script src="countries.js"></script>
+      <script src="script.js"></script>
 </body>
-
 </html>
